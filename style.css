@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+header{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html {
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(200, 200, 255);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-container{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    opacity: 0.95;
+}
+.nav-var{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    /* border-bottom: 1px solid gray; */
+    background-color: rgb(171, 171, 255);
+}
+.nav-list{
+    display: none;
+    gap: 32px;
+    align-items: center;
+    list-style: none;
+    font-size: 1rem;
+}
+.nav-item a:hover {
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+.nav-list li a{
+    color: white;
+    text-decoration: none;
+}
+@media (min-width: 640px) {
+    .nav-list{
+        display: flex;
+    }   
+    html{
+        font-size: 18px;
+    }   
+}
+.nav-link{
+    display: flex;
+    gap: 64px;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
+}
+.nav-link a:hover{
+    border-bottom: 2px solid blue;
+    color: blue;
+}
+.btn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 3px 3px 5px gray;
+    background-color: white;
+    border: none;
+    color: blue;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+.btn:hover{
+    background-color: blue;
+    color: white;
+}
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 98px;
+}
+main{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100% ;
+    padding: 0px 18px;
+}
+main h3{
+    margin-top: 32px;
+    text-align: center;
+}
+.card-container{
+    width: 320px;
+    box-shadow: 3px 3px 5px gray;   
+}
+.card-container img{
+    width: 100%;
+}
+.card-container p{
+    padding: 0px 14px;
+    margin-top: 14px;
+}
+.buttonn{
+    padding: 14px;
+    display: flex;
+    justify-content: end;
+}
+.nav-footer{
+    margin-top: 98px;
+    border-top: 1px solid grey;
+    padding: 24px;
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-between;
+}
+.mother-main .bg-text{
+    background: url("https://i.pinimg.com/originals/e7/8a/69/e78a69a1a2fd077e6688654806dad2b7.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 380px;
+    color: rgb(149, 149, 209);
+}
+.bg-text p{
+    align-items: center;
+}
+@media (width > 640px) {
+    .mother-main .bg-text{
+        height: 480px;
+    }
+}
+@media (width > 780px) {
+    .mother-main .bg-text{
+        height: 580px;
+    }
+}
+@media (width > 1024px) {
+    .mother-main .bg-text{
+        height: 720px;
+    }
+}
+@media (width > 1280px) {
+    .mother-main .bg-text{
+        height: 820px;
+    }
+}
+@media (width > 1536px) {
+    .mother-main .bg-text{
+        height: 980px;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    body{
+        background-color: black;
+        color: white;
+    }
+    .nav-link a{
+        color: white;
+    }
+}
